@@ -60,14 +60,16 @@
   border-radius: 50%;
 }
 
-.about-me-options .highlighted-btn, .primary-btn {
+.about-me-options .highlighted-btn,
+.primary-btn {
   margin: 0 0 0 30px;
   background-color: black;
   color: var(--light-blue);
   border: 1px solid var(--light-blue);
 }
 
-.about-me-options .highlighted-btn:hover, .primary-btn:hover {
+.about-me-options .highlighted-btn:hover,
+.primary-btn:hover {
   margin: 0 0 0 28px;
   background-color: var(--light-blue);
   color: rgb(0, 0, 0);
@@ -92,14 +94,15 @@
 }
 
 @media only screen and (max-width: 466px) {
-    .about-me-options {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-me-options .highlighted-btn, .primary-btn {
-        margin: 24px 0 0 0 !important;
-    }
-    .about-me-options button {
-        width: 100%;
-    }
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-options .highlighted-btn,
+  .primary-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
 }

@@ -83,18 +83,24 @@ export default function ContactMe(props) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
+            <Typical
+              loop={Infinity}
+              steps={["Get In Touch 📧", 1000, " ", 100]}
+            />
           </h2>{" "}
-          <a href="#">
+          <a target="_blank" href="https://wa.me/5519988237706">
             <i className="fa fa-whatsapp fa-2x"></i>
           </a>
-          <a href="#">
+          <a target="_blank" href="https://www.linkedin.com/in/lucastafer/">
             <i className="fa fa-linkedin fa-2x"></i>
           </a>
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://stackoverflow.com/users/17493947/lucastafer"
+          >
             <i className="fa fa-stack-overflow fa-2x"></i>
           </a>
-          <a href="#">
+          <a target="_blank" href="https://github.com/lucastafer">
             <i className="fa fa-github fa-2x"></i>
           </a>
         </div>

@@ -45,12 +45,11 @@ const Resume = (props) => {
     { label: "Work History", logoSrc: "work-history.png" },
     { label: "Programming Skills", logoSrc: "programming-skills.png" },
     { label: "Additional Courses", logoSrc: "book.png" },
-    { label: "Interests", logoSrc: "interests.png" },
   ];
 
   const programmingSkillsDetails = [
     { skill: "HTML", ratingPercentage: 90 },
-    { skill: "CSS | Bootstrap", ratingPercentage: 80 },
+    { skill: "CSS & Frameworks", ratingPercentage: 80 },
     { skill: "Javascript", ratingPercentage: 70 },
     { skill: "React.js", ratingPercentage: 80 },
     { skill: "React Native", ratingPercentage: 30 },
@@ -65,27 +64,37 @@ const Resume = (props) => {
     {
       title: "Node.js Formation",
       duration: { fromDate: "Udemy ", toDate: " 2022" },
-      description:"An complete Node.js formation, including real projects development, test and deploy.",
+      description:
+        "An complete Node.js formation, including real projects development, test and deploy.",
       subHeading: "Technologies: Node.js, Express.js, Vue.js, MySQL, MongoDB.",
     },
     {
       title: "React - Complete Guide",
       duration: { fromDate: "Udemy ", toDate: " 2022" },
-      description:"An complete React.js course, learning about React.js, Hooks, Redux, React Routing, Next.js and more.  ",
-      subHeading:
-        "Technologies:  React, Typescript.",
+      description:
+        "An complete React.js course, learning about React.js, Hooks, Redux, React Routing, Next.js and more.  ",
+      subHeading: "Technologies:  React, Typescript.",
     },
     {
       title: "Python 3 Introduction",
       duration: { fromDate: "CeV ", toDate: " 2021" },
-      description: "Basic introdutory Python Course, reaching until Python POO.",
-      subHeading:
-        "Technologies: Python.",
+      description:
+        "Basic introdutory Python Course, reaching until Python POO.",
+      subHeading: "Technologies: Python.",
     },
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
+      <ResumeHeading
+        heading={"OneBitCode, Brazil"}
+        subHeading={
+          "Certificated Specialization in Full Stack JavaScript Development"
+        }
+        fromDate={"2021"}
+        toDate={"2022"}
+      />
+
       <ResumeHeading
         heading={"PUCC University, Brazil"}
         subHeading={"Bachelor of Business Administration - BBA"}
@@ -93,12 +102,6 @@ const Resume = (props) => {
         toDate={"2022"}
       />
 
-      <ResumeHeading
-        heading={"OneBitCode, Brazil"}
-        subHeading={"Certificated Specialization in Full Stack JavaScript Development"}
-        fromDate={"2021"}
-        toDate={"2022"}
-      />
       <ResumeHeading
         heading={"High School "}
         subHeading={"Campinas Objetivo College"}
@@ -112,7 +115,7 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"Agis Brazil"}
           subHeading={"TP-Link Product/Technical Analyst"}
-          fromDate={"2021 "}
+          fromDate={"2019 "}
           toDate={" Present"}
         />
         <div className="experience-description">
@@ -135,7 +138,7 @@ const Resume = (props) => {
             - Responsible for monthly brand sales, capillarity performance,
             marketing monitoring and development of actions and strategies.
           </span>
-          <br/>
+          <br />
           <span className="resume-description-text">
             - Daily relationship with suppliers, customers and sales team.
           </span>
@@ -172,21 +175,6 @@ const Resume = (props) => {
           toDate={coursesDetails.duration.toDate}
         />
       ))}
-    </div>,
-
-    <div className="resume-screen-container" key="interests">
-      <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
-      />
-      <ResumeHeading
-        heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
-      />
     </div>,
   ];
 

@@ -1,5 +1,4 @@
 // Organização dos Components
-
 // Para deixar o App mais organizado e enxuto, é uma opção mapearmos todos os nossos components em um único arquivo. 
 // Desta forma, apenas um component é renderizado no App.js.
 

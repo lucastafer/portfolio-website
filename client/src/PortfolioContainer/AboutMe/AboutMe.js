@@ -13,12 +13,13 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
-    description: "Full stack web and mobile developer with background knowledge of MERN stacks. I built a solid base with full stack JavaScript development, focusing on Node.js and React.js, and now I'm currently looking for my first entry level opportunity as developer to apply my skills in job market and grow up with the company.",
+    description:
+      "Full stack web and mobile developer with background knowledge of MERN stacks. I built a solid base with full stack JavaScript development, focusing on Node.js and React.js, and now I'm currently looking for my first entry level opportunity as developer to apply my skills in job market and grow up with the company.",
     highlights: {
       heading: "Here are a Few Highlights:",
       bullets: [
         "Full Stack web and mobile development",
-        "Criative and very motivated",
+        "Creative and very motivated",
         "Beauty and interactive Front End design",
         "React and React Native",
         "Building REST API",
@@ -46,7 +47,9 @@ export default function AboutMe(props) {
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">
-            <span className="about-me-description">{SCREEN_CONSTSANTS.description}</span>
+            <span className="about-me-description">
+              {SCREEN_CONSTSANTS.description}
+            </span>
             <div className="about-me-highlights">
               <div className="highlight-heading">
                 <span>{SCREEN_CONSTSANTS.highlights.heading}</span>
@@ -54,7 +57,10 @@ export default function AboutMe(props) {
               {renderHighlight()}
             </div>
             <div className="about-me-options">
-              <button className="btn primary-btn" onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
+              <button
+                className="btn primary-btn"
+                onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+              >
                 {" "}
                 Hire Me{" "}
               </button>

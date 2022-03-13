@@ -14,8 +14,8 @@ router.post("/contact", (req, res) => {
   var transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "your-email-here",
-      pass: "your-password-here",
+      user: "lucas.taferdevs@gmail.com",
+      pass: "hiqfnslyfxndjejj",
     },
   });
 

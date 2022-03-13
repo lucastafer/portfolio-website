@@ -1,13 +1,9 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import shape from "../../assets/Projects/shape-bg.png";
-import tafernotes from "../../assets/Projects/tafernotes.png";
-import todolist from "../../assets/Projects/to-do-list.png";
 import "./Projects.css";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 export default function Projects(props) {
   let fadeInScreenHandler = (screen) => {
@@ -27,25 +23,24 @@ export default function Projects(props) {
       <section className="projects-section fade-in" id={props.id || ""}>
         <div className="container">
           <div className="row">
-            <div className="carousel-wrapper">
-              <Carousel infiniteLoop showArrows={true}>
-                <div>
-                  <img src={tafernotes} />
-                </div>
-                <div>
-                  <img src={tafernotes} />
-                </div>
-                <div>
-                  <img src={todolist} />
-                </div>
-              </Carousel>
-            </div>
+            <ProjectsCarousel />
           </div>
         </div>
+        <div className="footer-wave">
+          <svg
+            viewBox="0 -20 700 110"
+            width="100%"
+            height="110"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z"
+              fill="#000"
+            />
+          </svg>
+        </div>
       </section>
-      <div className="footer-image">
-        <img src={shape} alt="Photo not responding" />
-      </div>
+
     </div>
   );
 }

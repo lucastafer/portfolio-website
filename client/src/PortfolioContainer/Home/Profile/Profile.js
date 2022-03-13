@@ -10,16 +10,16 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
+              <a target="_blank" href="https://wa.me/5519988237706">
                 <i className="fa fa-whatsapp fa-2x"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://www.linkedin.com/in/lucastafer/">
                 <i className="fa fa-linkedin fa-2x"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://stackoverflow.com/users/17493947/lucastafer">
                 <i className="fa fa-stack-overflow fa-2x"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://github.com/lucastafer">
                 <i className="fa fa-github fa-2x"></i>
               </a>
             </div>
@@ -55,10 +55,8 @@ export default function Profile() {
 
           <div className="profile-options">
             <a onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
-            <button className="btn primary-btn">
-              {" "}Hire Me{" "}
-            </button>
-            </a> 
+              <button className="btn primary-btn"> Hire Me </button>
+            </a>
             <a href="lucas.pdf" download="Lucas-Fernandes.pdf">
               <button className="btn primary-btn">Get Resume</button>
             </a>
