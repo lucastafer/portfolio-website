@@ -6,7 +6,6 @@ import taferstocks from "../../assets/Projects/taferstocks.png";
 import todolist from "../../assets/Projects/to-do-list.png";
 import taferdevs from "../../assets/Projects/taferdevs.png";
 
-
 export default function ProjectsCarousel() {
   return (
     <div className="carousel-wrapper">
@@ -40,8 +39,11 @@ export default function ProjectsCarousel() {
               and MongoDB.
               <br />
               Available on:{" "}
-              <a target="_blank" href="https://lucas-dashboard.herokuapp.com/#">
-                https://lucas-dashboard.herokuapp.com/#
+              <a
+                target="_blank"
+                href="https://github.com/lucastafer/taferstocks"
+              >
+                https://github.com/lucastafer/taferstocks
               </a>
             </i>
           </p>

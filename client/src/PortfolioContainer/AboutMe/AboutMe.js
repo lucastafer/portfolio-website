@@ -13,8 +13,11 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
-    description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks. I built a solid base with full stack JavaScript development, focusing on Node.js and React.js, and now I'm currently looking for my first entry level opportunity as developer to apply my skills in job market and grow up with the company.",
+    description: `I started my professional career at Agis Brazil as a Trainee, being later hired and
+      promoted to Product Technical Analyst, specifically for the brand TP-Link.
+      Looking for a career transition, in 2021 I got closer to programming and web development, and in 2022 I
+      reached my first opportunity in this area. Today I’m a full stack developer, with background knowledge of MERN stacks currently
+      working with the React and TypeScript stack in a Brazilian company.`,
     highlights: {
       heading: "Here are a Few Highlights:",
       bullets: [

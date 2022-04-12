@@ -50,33 +50,33 @@ const Resume = (props) => {
   const programmingSkillsDetails = [
     { skill: "HTML", ratingPercentage: 90 },
     { skill: "CSS & Frameworks", ratingPercentage: 80 },
-    { skill: "Javascript", ratingPercentage: 70 },
+    { skill: "Javascript", ratingPercentage: 75 },
+    { skill: "TypeScript", ratingPercentage: 60 },
     { skill: "React.js", ratingPercentage: 80 },
     { skill: "React Native", ratingPercentage: 30 },
-    { skill: "Node.js", ratingPercentage: 70 },
-    { skill: "Express.js", ratingPercentage: 70 },
+    { skill: "Node.js & Express.js", ratingPercentage: 70 },
     { skill: "Python", ratingPercentage: 35 },
-    { skill: "MongoDb", ratingPercentage: 70 },
-    { skill: "MySQL", ratingPercentage: 30 },
+    { skill: "MongoDb", ratingPercentage: 60 },
+    { skill: "MySQL", ratingPercentage: 25 },
   ];
 
   const coursesDetails = [
     {
-      title: "Node.js Formation",
+      title: "TypeScript from Basic to Advanced",
       duration: { fromDate: "Udemy ", toDate: " 2022" },
       description:
-        "An complete Node.js formation, including real projects development, test and deploy.",
-      subHeading: "Technologies: Node.js, Express.js, Vue.js, MySQL, MongoDB.",
+        "An complete TypeScript webcourse, including projects development with React and Express.js.",
+      subHeading: "Technologies: TypeScript, React, Express.js.",
     },
     {
       title: "React - Complete Guide",
       duration: { fromDate: "Udemy ", toDate: " 2022" },
       description:
         "An complete React.js course, learning about React.js, Hooks, Redux, React Routing, Next.js and more.  ",
-      subHeading: "Technologies:  React, Typescript.",
+      subHeading: "Technologies:  React, TypeScript.",
     },
     {
-      title: "Python 3 Introduction",
+      title: "Python 3 Introduction & Logic Programming",
       duration: { fromDate: "CeV ", toDate: " 2021" },
       description:
         "Basic introdutory Python Course, reaching until Python POO.",
@@ -96,7 +96,7 @@ const Resume = (props) => {
       />
 
       <ResumeHeading
-        heading={"PUCC University, Brazil"}
+        heading={"Pontifical Catholic University of Campinas, Brazil"}
         subHeading={"Bachelor of Business Administration - BBA"}
         fromDate={"2019"}
         toDate={"2022"}
@@ -113,34 +113,39 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Agis Brazil"}
-          subHeading={"TP-Link Product/Technical Analyst"}
-          fromDate={"2019 "}
+          heading={"Mitfokus Financial Solutions"}
+          subHeading={"Full Stack Developer"}
+          fromDate={"Apr. 2022 "}
           toDate={" Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Big IT hardware distributor company (3rd in Brazilian market).
+            Brazilian company who provides financial solutions in web/mobile
+            applications for healthcare professionals.
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Carrying out activities related to the routine of the
-            administrative part of the company.
+            - Front and back end development of web applications with the team,
+            using React and TypeScript stack.
           </span>
-          <br />
+        </div>
+        <br />
+        <ResumeHeading
+          heading={"Agis Brazil"}
+          subHeading={"TP-Link Product/Technical Analyst"}
+          fromDate={" Jun. 2019 "}
+          toDate={" Apr. 2022"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Big IT hardware distributor (3rd in Brazilian market).
+          </span>
+        </div>
+        <div className="experience-description">
           <span className="resume-description-text">
             - TP-Link technical responsible, assisting with technical issues and
             projects for network infrastructure.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Responsible for monthly brand sales, capillarity performance,
-            marketing monitoring and development of actions and strategies.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Daily relationship with suppliers, customers and sales team.
           </span>
         </div>
       </div>
