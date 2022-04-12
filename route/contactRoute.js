@@ -15,7 +15,7 @@ router.post("/contact", (req, res) => {
     service: "Gmail",
     auth: {
       user: "lucas.taferdevs@gmail.com",
-      pass: "hiqfnslyfxndjejj",
+      pass: "your-password-here",
     },
   });
 
